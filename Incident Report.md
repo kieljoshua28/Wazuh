@@ -55,7 +55,7 @@ A representative alert was selected from the Wazuh "Threat Hunting" module and e
 <img width="1907" height="868" alt="Screenshot 2026-10-06 203614" src="https://github.com/user-attachments/assets/8daa6c96-4629-4ee0-8277-fbd5a45c3470" />
 
 
-Two things stand out here, this is a **PAM-level escalation alert** distinct from the individual "Failed password" events in section 3.2: it fires specifically once a source has missed the password multiple times in a session, which is a stronger brute-force indicator than a single failed login. Second, Wazuh's default ruleset **automatically maps this activity to MITRE ATT&CK (T1110 – Brute Force, Credential Access)** and to multiple compliance frameworks (NIST 800-53, GDPR, HIPAA), with no custom rule authoring required. This confirms the SIEM's out-of-the-box detection logic is both accurate and audit-ready.
+This is a **PAM-level escalation alert** distinct from the individual "Failed password" events in section 3.2: it fires specifically once a source has missed the password multiple times in a session, which is a stronger brute-force indicator than a single failed login. Second, Wazuh's default ruleset **automatically maps this activity to MITRE ATT&CK (T1110 – Brute Force, Credential Access)** and to multiple compliance frameworks (NIST 800-53, GDPR, HIPAA), with no custom rule authoring required. This confirms the SIEM's out-of-the-box detection logic is both accurate and audit-ready.
 
 ---
 
